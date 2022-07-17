@@ -3,11 +3,11 @@
         <!-- <h1>{{ msg }}</h1> -->
 
         <!----Header section only-->
-        <header> 
+        <header>
             <div class="nav-page">
-             <div class="fashion-logo">
-                <h2>Fashion</h2>
-            </div>
+                <div class="fashion-logo">
+                    <h2></h2>
+                </div>
 
                 <nav>
                     <ul>
@@ -18,121 +18,98 @@
                         <li><a href="#Notification.html" target="_blank" rel="noopener">Notification</a></li>
                     </ul>
                 </nav>
-                 <div class="fashion-circle"></div>
+                <div class="fashion-circle"></div>
 
             </div>
 
-           
+
 
         </header>
 
         <!---------section1 only-->
-        <!-- <div class="grid-main">
-            <div class="fashion-name">
-                <h1>ASHBELLA <span>.</span></h1>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="color1">
-                        <h2>color1</h2>
-                    </div>
-                    <img :src="require('@/assets/mage3.jpg')" />
-                    <img :src="require('@/assets/mage4.jpg')" />
-                    <img :src="require('@/assets/mage5.jpg')" />
-                    <div class="color2">
-                        <h2>color2</h2>
-                    </div>
+        <div class="container">
+            <div class="main-grid">
 
+                <div class="fashion-name">
+                    <h1>ASHBELLA .</h1>
                 </div>
-
-                <div class="column">
-                    <div class="color1">
-                        <h2>color1</h2>
-                    </div>
-                    <img :src="require('@/assets/mage6.jpg')" />
-                    <img :src="require('@/assets/mage7.jpg')" />
-                    <img :src="require('@/assets/mage8.jpg')" />
-                    <div class="color2">
-                        <h2>color2</h2>
-                    </div>
-
+                <div class="grid-image">
+                    <div class="image1"><img :src="require('@/assets/mage11.jpg')" /></div>
+                    <div class="image2"><img :src="require('@/assets/mage8.jpg')" /></div>
+                    <div class="image3"><img :src="require('@/assets/mage5.jpg')" /></div>
+                    <div class="image4"><img :src="require('@/assets/mage3.jpg')" /></div>
+                    <div class="image5"><img :src="require('@/assets/mage4.jpg')" /></div>
+                    <div class="image6"><img :src="require('@/assets/mage9.jpg')" /></div>
                 </div>
-
 
             </div>
 
+        </div>
 
-        </div> -->
-
-
-
+        <footer>
+            <p className='footer-para'>Powered By Walulel Ghana &copy; 2022 | Theme By: <span class="">Ashbella</span>
+            </p>
+        </footer>
 
     </div>
-
 
 </template>
 
 <script>
 export default {
     name: 'LandingPage',
-    // data() {
-    //    return image: { {backgroundImage: "url(./assets/mage1.jpg)"}}
-    // }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-*{
+* {
     padding: 0;
     margin: 0;
 
 }
-header{
-    background-image: url('~@/assets/mage1.jpg');
+
+header {
+    background-image: url('~@/assets/mage2.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    margin-bottom: 5rem;
     /* object-fit: fill; */
 }
 
-.fashion-logo{
-    background-color:#EC7063;
+.fashion-logo {
+    background-color: #EC7063;
     color: white;
     text-align: center;
-    margin-top: 2rem;
+    margin-left: 2rem;
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-.fashion-circle{
-    /* background-color:#EC7063; */
-    background: #12c2e9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+/* .fashion-circle {
+    
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
     color: white;
     text-align: center;
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    /* position: absolute;
-    top: 80%;
-    left: 10% */
-}
+
+} */
+
 .nav-page {
     display: flex;
     justify-content: space-between;
     position: relative;
-}
-
-
-h3 {
-    margin: 40px 0 0;
+    padding-top: 2rem;
 }
 
 ul {
@@ -142,10 +119,113 @@ ul {
 
 li {
     display: inline-block;
+    text-decoration: none;
     margin: 0 10px;
 }
 
 a {
     color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fashion-name {
+    writing-mode: vertical-lr;
+    font-size: 5rem;
+    margin-top: 2;
+    margin-left: 5rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* .span{
+    font-size: 2rem;
+    background-color: #EC7063;
+} */
+
+
+.grid-image {
+    display: grid;
+    grid-gap: 1.5rem;
+}
+
+.grid-image img {
+    width: 130%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.image1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.image2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+
+}
+
+.image3 {
+
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+
+}
+
+.image4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+
+}
+
+.image5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+}
+
+.image6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+footer {
+    height: 200px;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+
 }
 </style>
