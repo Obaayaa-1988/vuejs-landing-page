@@ -45,6 +45,53 @@
             </div>
 
         </div>
+        <!-------card section-->
+        <section>
+            <h1>MILLENIUM GREATNESS</h1>
+            <div class="container">
+
+                <div class="main-card">
+                    <div class="card-inner">
+                        <div><img :src="require('@/assets/mage7.jpg')" /></div>
+
+
+                        <div class="card-bottom">
+                            <button>Shop Now</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-inner">
+                    
+                        <div><img :src="require('@/assets/mage10.jpg')" /></div>
+
+                        <div class="card-bottom">
+                            <button>Shop Now</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-inner">
+                        <div><img :src="require('@/assets/mage1.jpg')" /></div>
+                        <div class="card-bottom">
+                            <button>Shop Now</button>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
 
         <footer>
             <p className='footer-para'>Powered By Walulel Ghana &copy; 2022 | Theme By: <span class="">Ashbella</span>
@@ -213,6 +260,62 @@ a {
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 9;
+}
+
+
+section {
+    background-image: url('~@/assets/mage2.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100%;
+    
+
+}
+section h1{
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.main-card {
+    display: flex;
+    gap: 20px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.card-inner {
+    width: 25rem;
+    height: 42rem;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+
+.main-card img {
+    width: 100%;
+    height: 100%;
+
+}
+
+section button{
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    background-color: burlywood;
+    text-align: center;
+    color: white;
+    margin-left: 7rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
 }
 
 footer {
