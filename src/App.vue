@@ -2,26 +2,58 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <LandingPage />
-    
+    <LandingPage :links="navBar" :post="posts" />
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import LandingPage from './components/LandingPage.vue'
+import LandingPage from "./components/LandingPage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     // HelloWorld,
-    LandingPage
-}
-}
+    LandingPage,
+  },
+  data() {
+    return {
+      navBar: [
+        {
+          url: "#Home.html",
+          name: "Home",
+        },
+
+        {
+          url: "#Shop.html",
+          name: "Shop",
+        },
+
+        {
+          url: "#Delivery.html",
+          name: "Delivery",
+        },
+
+        {
+          url: "#About.html",
+          name: "About",
+        },
+        {
+          url: "#Notification.html",
+          name: "Notification",
+        },
+      ],
+      posts: {
+        title: "The Best Is Yet To Come",
+        numberOfLikes: 200,
+      },
+    };
+  },
+};
 </script>
 
 <style>
-*{
+* {
   padding: 0;
   margin: 0;
 }
