@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <LandingPage :links="navBar" :post="posts" />
+    <!-- <LandingPage :links="navBar" :post="posts" /> -->
+    <LandingPage />
   </div>
 </template>
 
@@ -18,31 +18,31 @@ export default {
   },
   data() {
     return {
-      navBar: [
-        {
-          url: "#Home.html",
-          name: "Home",
-        },
+      // navBar: [
+      //   {
+      //     url: "#Home.html",
+      //     name: "Home",
+      //   },
 
-        {
-          url: "#Shop.html",
-          name: "Shop",
-        },
+      //   {
+      //     url: "#Shop.html",
+      //     name: "Shop",
+      //   },
 
-        {
-          url: "#Delivery.html",
-          name: "Delivery",
-        },
+      //   {
+      //     url: "#Delivery.html",
+      //     name: "Delivery",
+      //   },
 
-        {
-          url: "#About.html",
-          name: "About",
-        },
-        {
-          url: "#Notification.html",
-          name: "Notification",
-        },
-      ],
+      //   {
+      //     url: "#About.html",
+      //     name: "About",
+      //   },
+      //   {
+      //     url: "#Notification.html",
+      //     name: "Notification",
+      //   },
+      // ],
       posts: {
         title: "The Best Is Yet To Come",
         numberOfLikes: 200,
