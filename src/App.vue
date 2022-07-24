@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    
     <!-- <LandingPage :links="navBar" :post="posts" /> -->
-    <LandingPage />
+    <router-view></router-view>
+    <!-- <LandingPage /> -->
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import LandingPage from "./components/LandingPage.vue";
+// import LandingPage from "./components/LandingPage.vue";
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
-    LandingPage,
+    // LandingPage,
   },
   data() {
     return {
@@ -57,12 +58,5 @@ export default {
   padding: 0;
   margin: 0;
 }
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+
 </style>

@@ -7,8 +7,8 @@ import LiveComponent from "../components/LiveComponent.vue";
 
 const routes = [
     { path: "/", name: "Home", component: LandingPage },
-    { path: "/ShopComponent", name: "Shop", component: ShopComponent },
-    { path: "/DeliveryComponent", name: "Delivery", component: LiveComponent },
+    { path: "/shop", name: "Shop", component: ShopComponent },
+    { path: "/delivery", name: "Delivery", component: LiveComponent },
 
 ]
 
