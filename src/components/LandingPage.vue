@@ -6,14 +6,15 @@
         <div class="fashion-logo"></div>
 
         <nav>
-            <ul><li><router-link to="/">Home</router-link></li>
+          <ul>
+            <li><router-link to="/">Home</router-link></li>
             <li><router-link to="/shop">Shop</router-link></li>
             <li><router-link to="/delivery">Delivery</router-link></li>
-            <li> <router-link to="/about">About</router-link></li>
-            <li><router-link to="/notification">Notification</router-link> </li>
-            </ul>
-          
-           <!-- <ul>
+            <li><router-link to="/about">About</router-link></li>
+            <li><router-link to="/notification">Notification</router-link></li>
+          </ul>
+
+          <!-- <ul>
             <li v-for="(link, index) in links" :key="index">
               <a :href="link.url">{{ link.name }}</a>
             </li>
@@ -34,6 +35,7 @@
       <div class="great2">
         <button>Learn More</button>
       </div>
+      
     </header>
 
     <!---------section1 only-->
@@ -69,18 +71,14 @@
         </div>
       </div>
     </section>
-    <div id="grid-container">
-    <div class="grid-color">
+    <!-- <div id="grid-container">
+      <div class="grid-color">
         <h4>mi casa</h4>
-
-
-    </div>
-    <div class="grid-text">
+      </div>
+      <div class="grid-text">
         <h4>hello there</h4>
-
-    </div>
-
-    </div>
+      </div>
+    </div> -->
     <!------footer section-->
 
     <footer>
@@ -126,5 +124,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-@import "../assets/css/style.css"
+@import "../assets/css/style.css";
 </style>
