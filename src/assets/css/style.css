@@ -68,7 +68,7 @@
     justify-content: flex-end;
   }
   
-  button {
+  .btn1 {
     padding: 1rem 2.5rem;
     background-color: burlywood;
     color: white;
@@ -200,6 +200,101 @@
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
+  }
+  /* styling section two first card*/
+  #grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5rem;
+  }
+
+  .grid-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    background-color: aquamarine;
+    
+  }
+  .grid-color{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    height: 45rem;
+    background-color: #ec7063;
+    border-top-left-radius: 37%;
+    border-bottom-right-radius: 37%;
+  }
+
+  .btn1 {
+    padding: 1rem 2.5rem;
+    background-color: burlywood;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 9rem;
+    margin-top: 2rem;
+  }
+  
+
+   /* styling section two second card*/
+   #grid2-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5rem;
+  }
+
+  .grid-text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    background-color: aquamarine;
+    
+  }
+  .grid-color2{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    height: 48rem;
+    background-color: #ec7063;
+    border-top-left-radius: 75px;
+    border-bottom-right-radius:40%;
+  }
+
+
+   /* styling section two third card*/
+   #grid3-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5rem;
+  }
+
+  .grid-text3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;
+    background-color: aquamarine;
+    
+  }
+  .grid-color3{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    height: 50rem;
+    background-color: #2f0e2a;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius:40%;
   }
   
   footer {
