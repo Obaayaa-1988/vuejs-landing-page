@@ -151,6 +151,10 @@
     grid-row-start: 6;
     grid-row-end: 9;
   }
+
+  .head-text{
+    color: white;
+  }
   
   section {
     background-image: url("~@/assets/mage2.jpg");

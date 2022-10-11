@@ -58,7 +58,7 @@
     </div>
     <!-------card section-->
     <section>
-      <h1>MILLENIUM GREATNESS</h1>
+      <h1 class="head-text">MILLENIUM GREATNESS</h1>
       <div class="container">
         <div class="main-card">
           <div v-for="(image, index) in images" :key="index" class="card-inner">
