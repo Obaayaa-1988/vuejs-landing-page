@@ -13,30 +13,33 @@
             <li><router-link to="/about">About</router-link></li>
             <li><router-link to="/notification">Notification</router-link></li>
           </ul>
-
           <!-- <ul>
             <li v-for="(link, index) in links" :key="index">
               <a :href="link.url">{{ link.name }}</a>
             </li>
           </ul>  -->
         </nav>
-
-        <!-- <div>
-          <h1>{{ post.title }}</h1>
-          <p>{{ post.numberOfLikes }}</p>
-        </div> -->
-
         <div class="fashion-circle"></div>
       </div>
 
       <div class="great">
         <h1>GREATNESS</h1>
+        
       </div>
       <div class="great2">
         <button>Learn More</button>
       </div>
       
     </header>
+    <!-----practice side-->
+
+    <!-- <h2  class="real">
+      {{ song.title }}
+    
+    </h2> -->
+
+    
+    
 
     <!---------section1 only-->
     <div class="container">
@@ -81,6 +84,14 @@
     </div> -->
     <!------footer section-->
 
+
+    <!-- <div v-for="(post, index) in posts" :key="index">
+      <h1 class="real">{{ post.title }}</h1>
+      <p class="real">{{ post.numberOfLikes }}</p>
+    </div> -->
+
+    
+
     <footer>
       <p className="footer-para">
         Powered By Walulel Ghana &copy; 2022 | Theme By: <span>Ashbella</span>
@@ -99,8 +110,9 @@ import ShopComponent from "./ShopComponent.vue";
 export default {
   name: "LandingPage",
   props: {
-    links: Array,
+    // links: Array,
     post: Object,
+    // song: Object,
   },
   data() {
     return {

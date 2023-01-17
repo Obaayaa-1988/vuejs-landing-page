@@ -2,6 +2,8 @@
   <div id="app">
     
     <!-- <LandingPage :links="navBar" :post="posts" /> -->
+  
+    <!-- <LandingPage  :song="songs" /> -->
     <router-view></router-view>
     <!-- <LandingPage /> -->
   </div>
@@ -11,11 +13,13 @@
 // import HelloWorld from './components/HelloWorld.vue'
 // import LandingPage from "./components/LandingPage.vue";
 
+
 export default {
   name: "App",
   components: {
     // HelloWorld,
     // LandingPage,
+   
   },
   data() {
     return {
@@ -44,10 +48,19 @@ export default {
       //     name: "Notification",
       //   },
       // ],
-      posts: {
-        title: "The Best Is Yet To Come",
-        numberOfLikes: 200,
-      },
+      posts: [
+        {
+         title: "The Best Is Yet To Come",
+         numberOfLikes: 200,
+       },
+
+      ]
+
+      // songs: {
+      //   title: "great is your faithfulness",
+      //   artiste: "mary-jane"
+
+      // }
     };
   },
 };
